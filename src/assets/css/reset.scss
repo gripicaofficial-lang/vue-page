@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* Development ShinChangEon © 2024~ */
+/* LayoutStylesheet */
+
+/* Google WebFont Import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {font-family: 'GmarketSans';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');font-weight: 300;font-style: normal;}
+@font-face {font-family: 'GmarketSans';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-weight: 500;font-style: normal;}
+@font-face {font-family: 'GmarketSans';src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');font-weight: 700;font-style: normal;}
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Playwrite+DK+Uloopet+Guides&display=swap');
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,
+img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,table,
+caption,tbody,tfoot,thead,tr,th,td, button{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font-family: 'GmarketSans', Exo2, sans-serif,Dotum,Helvetica,AppleSDGothicNeo,sans-serif;
+	background:transparent;
+	text-align:justify;
+	-webkit-margin:0;
+	letter-spacing:0;
+}
+input[type=text]{font-family:'Noto Sans KR';}
+textarea{font-family: 'GmarketSans', sans-serif,Dotum,Helvetica,AppleSDGothicNeo,sans-serif;letter-spacing:-.01em}
+select{margin:0;}
+ol,ul,li{line-height:100%;list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+img{border:0 none;}
+a,input,li,span{outline-style:none;text-decoration:none;font-weight:normal;}
+i{font-style:normal}
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+
+/* Chrome Input */
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active,
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+	font-family: 'Noto Sans KR', sans-serif,Dotum,Helvetica,AppleSDGothicNeo,sans-serif;
+	-webkit-text-fill-color:var(--color__black_typeA)!important;
+	-webkit-box-shadow: 0 0 0px 1000px var(-color__white_typeC) inset;
+	transition: background-color 90000s ease-in-out 0s;
+	font-size: 14px!important;
+}
+
+input.password[type=text]{-webkit-text-security: disc;}
+
+/* Safari 9.0+ */
+_::-webkit-:not(:root:root), .safari_only {
+input{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+}

@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* Development ShinChangEon © 2024~ */
+/* Mixin Css */
+
+/* thmeVariableDefaultColor */
+
+//Fixel 1~30
+$fx1:1px;$fx2:2px;$fx3:3px;$fx4:4px;$fx5:5px;$fx6:6px;$fx7:7px;$fx8:8px;$fx9:9px;$fx10:10px;$fx11:11px;$fx12:12px;$fx13:13px;$fx14:14px;$fx15:15px;$fx16:16px;$fx17:17px;$fx18:18px;$fx19:19px;$fx20:20px;$fx21:21px;$fx22:22px;$fx23:23px;$fx24:24px;$fx25:25px;$fx26:26px;$fx27:27px;$fx28:28px;$fx29:29px;$fx30:30px;
+
+//Align
+$itmc:center;$itml:left;$itmr:right;$itmb:bottom;$itmt:top;$itmm:middle;
+
+//PointColor
+$green: #008744;
+$blue: #0057e7;
+$red: #d62d20;
+$yellow: #ffa700;
+$white: #eee;
+$clwt:#fff;
+$clwtgy:#f6f6f6;
+$clgyb:#7b7b7b;
+$clgya:#888;
+$clgyc:#ccc;
+$clgyd:#efefef;
+$clgye:#ddd;
+$clgyf:#626262;
+$clgyg:#d9d9d9;
+$clgyh:#eee;
+$clgyi:#aaa;
+$clgyj:#868D9B;
+$clgyk:#26282F;
+$clgyl:#1E1F25;
+$clgym:#2D2F36;
+$clgyn:#343740;
+$clgyo:#33353d;
+$clgyp:#272930;
+$clgyq:#1F2126;
+$clgyr:#9599A9;
+$clgys:#40434D;
+$clgyt:#292B32;
+$clgyu:#34363F;
+$clgyw:#f6f6f6;
+$clgyx:#24262C;
+$clgyy:#4E4F56;
+$clgyz:#1D1F24;
+$clgyaa:#16171C;
+$clgyab:#262A32;
+$clgyac:#2E3038;
+$clgyad:#717582;
+$clgyae:#15171D;
+$clgyaf:#2D303B;
+$clgyag:#383A43;
+$clgyah:#454954;
+$clgyai:#4D505E;
+$clgyaj:#393B44;
+$clgyak:#2E3A58;
+$clgyal:#232E49;
+$clgyam:#475780;
+$clgyan:#899CCC;
+$clgyao:#17181D;
+$clgyap:#3A3D48;
+$clgyaq:#383B46;
+$clgyar:#e7e7e7;
+$clgyas:#1A1B20;
+$clgyat:#979797;
+$clgyau:#444855;
+$clgyav:#2A2C33;
+$clgyaw:#8E9098;
+$clgyax:#22232A;
+$clpp:#A73EE2;
+$clgr:#1fbacc;
+$clgrn:#6CB731;
+$clgrna:#538F24;
+$clgrnb:#ABFF68;
+$clgrnc:#323922;
+$clgrnd:#01FFA4;
+$clgrne:#5F782B;
+$clgrnf:#BCE763;
+$clgrng:#384E27;
+$clgrnh:#C2FF94;
+$clrd:#FF2164;
+$clrda:#431D1D;
+$clrdb:#B13D3D;
+$clrdc:#FF6D9D;
+$clrdd:#B02A54;
+$clrde:#6B2239;
+$clrdf:#AD657B;
+$clpk:#F5217A;
+$clbl:#3971FF;
+$clblua:#00C2FF;
+$clblub:#E1F1FF;
+$clbluc:#D5D8E2;
+$clblud:#5C606D;
+$clblue:#303D5F;
+$clbluf:#00A3FF;
+$clblug:#234371;
+$clbluh:#3971c2;
+$clblui:#6F8FBE;
+$clbluj:#1D2C43;
+$clbluk:#41A4FF;
+$clblul:#14396C;
+$clblum:#33436D;
+$clblun:#0069B4;
+$clbluo:#415ED2;
+$clblup:#39C4FF;
+$clbluq:#77a0c7;
+$clblur:#3498db;
+$clyl:#FFE380;
+$clyla:#FFC633;
+$clylb:#FFB800;
+$clylc:#FFA53A;
+$clog:#FF7A00;
+$clbw:#805126;
+$clblk:#000;
+$clbla:#21232A;
+$clblb:#26282F;
+$clblc:#2D2F37;
+
+//WhiteThemeColor
+$t_fff:#fff;
+$t_ccc:#ccc;
+$t_eee:#eee;
+$t_ddd:#ddd;
+$t_dedede:#dedede;
+$t_dbdbdb:#dbdbdb;
+$t_d0d0d0:#d0d0d0;
+$t_ececec:#ececec;
+$t_efefef:#EFEFEF;
+$t_e6e6e6:#E6E6E6;
+$t_e7e7e7:#E7E7E7;
+$t_fafafa:#fafafa;
+$t_f2f2f2:#f2f2f2;
+$t_f4f4f4:#f4f4f4;
+$t_f6f6f6:#f6f6f6;
+$t_bfbfbf:#bfbfbf;
+$t_2D2F36:#2D2F36;
+$t_888:#888;
+$t_4B4B4B:#4B4B4B;
+$t_20272d:#2a2c2e;
+
+//FontWeight 100 ~ 900
+$fnf1:100;$fnf2:200;$fnf3:300;$fnf4:400;$fnf5:500;$fnf6:600;$fnf7:700;$fnf8:800;$fnf9:900;
+
+//TextPosition
+@mixin txtct{text-align:center}
+@mixin txtlt{text-align:left}
+@mixin txtrt{text-align:right}
+
+//BackgroundOption
+$brpcc:no-repeat center center;
+$brplc:no-repeat left center;
+$brprc:no-repeat right center;
+$brpct:no-repeat center top;
+$brplt:no-repeat left top;
+$brprt:no-repeat right top;
+$brpcb:no-repeat center bottom;
+$brplb:no-repeat left bottom;
+$brprb:no-repeat right bottom;
+
+//TransitionAllEase
+$ae15:all .15 ease;
+$ae25:all .25 ease;
+$al15:all .15 linear;
+$al25:all .25 linear;
+@mixin trn15e{transition:$ae15}
+@mixin trn25e{transition:$ae25}
+@mixin trn15l{transition:$al15}
+@mixin trn25l{transition:$al25}
+
+//FontSize
+@mixin fnts10{font-size:$fx10}
+@mixin fnts11{font-size:$fx11}
+@mixin fnts12{font-size:$fx12}
+@mixin fnts13{font-size:$fx13}
+@mixin fnts14{font-size:$fx14}
+@mixin fnts16{font-size:$fx16}
+@mixin fnts18{font-size:$fx18}
+@mixin fnts20{font-size:$fx20}
+@mixin fnts22{font-size:$fx22}
+@mixin fnts24{font-size:$fx24}
+@mixin fnts28{font-size:$fx28}
+@mixin fnts32{font-size:$fx32}
+@mixin fnts36{font-size:$fx36}
+@mixin fnts40{font-size:$fx40}
+@mixin fnts44{font-size:$fx44}
+
+//FontWeight
+@mixin fw1{font-weight:$fnf1}
+@mixin fw2{font-weight:$fnf2}
+@mixin fw3{font-weight:$fnf3}
+@mixin fw4{font-weight:$fnf4}
+@mixin fw5{font-weight:$fnf5}
+@mixin fw6{font-weight:$fnf6}
+@mixin fw7{font-weight:$fnf7}
+@mixin fw8{font-weight:$fnf8}
+@mixin fw9{font-weight:$fnf9}
+
+//ButtonStyle
+
+//InputStyle
+
+//ColumnStyle
+    //DisplayTableStyle
+    //Flex
+
+//BorderRadius
+
+//BackgroundColor
+@mixin border-radius-all($all){
+    border-radius:$all;
+}
+@mixin border-radius($top, $right, $bottom, $left){
+    border-radius:$top $right $bottom $left;
+}
+
+//Border
+@mixin border-style($style, $type, $color){
+    border:$style $type $color;
+}
+@mixin border-right-style($style, $type, $color){
+    border-right:$style $type $color;
+}
+@mixin border-bottom-style($style, $type, $color){
+    border-bottom:$style $type $color;
+}
+@mixin border-left-style($style, $type, $color){
+    border-left:$style $type $color;
+}
+@mixin border-top-style($style, $type, $color){
+    border-top:$style $type $color;
+}
+
+//Background
+@mixin image-style($ul, $size, $repeat, $positionX, $positionY) {
+    background-image: url(/images/#{$ul});
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $positionX $positionY;
+} 
+
+//MediaScreenQuery
+
+//SelectBoxStyle
+
+//RadioBoxStyle
+
+//CheckBoxStyle
+
+//PaddingAllStyle
+@mixin pdat5{padding:$fx5 0 0 0}
+@mixin pdar5{padding:0 $fx5 0 0}
+@mixin pdab5{padding:0 0 $fx5 0}
+@mixin pdar5{padding:0 0 0 $fx5}
+    @mixin pdat10{padding:$fx10 0 0 0}
+    @mixin pdar10{padding:0 $fx10 0 0}
+    @mixin pdab10{padding:0 0 $fx10 0}
+    @mixin pdar10{padding:0 0 0 $fx10}
+        @mixin pdat15{padding:$fx15 0 0 0}
+        @mixin pdar15{padding:0 $fx15 0 0}
+        @mixin pdab15{padding:0 0 $fx15 0}
+        @mixin pdar15{padding:0 0 0 $fx15}
+            @mixin pdat20{padding:$fx20 0 0 0}
+            @mixin pdar20{padding:0 $fx20 0 0}
+            @mixin pdab20{padding:0 0 $fx20 0}
+            @mixin pdar20{padding:0 0 0 $fx20}
+
+//PaddingStyle
+@mixin pdt5{padding-top:$fx5}
+@mixin pdr5{padding-right:$fx5}
+@mixin pdb5{padding-bottom:$fx5}
+@mixin pdr5{padding-left:$fx5}
+    @mixin pdt10{padding-top:$fx10}
+    @mixin pdr10{padding-right:$fx10}
+    @mixin pdb10{padding-bottom:$fx10}
+    @mixin pdr10{padding-left:$fx10}
+        @mixin pdt15{padding-top:$fx15}
+        @mixin pdr15{padding-right:$fx15}
+        @mixin pdb15{padding-bottom:$fx15}
+        @mixin pdr15{padding-left:$fx15}
+            @mixin pdt20{padding-top:$fx20}
+            @mixin pdr20{padding-right:$fx20}
+            @mixin pdb20{padding-bottom:$fx20}
+            @mixin pdr20{padding-left:$fx20}
+
+//MarginAllStyle
+@mixin mgat5{margin:$fx5 0 0 0}
+@mixin mgar5{margin:0 $fx5 0 0}
+@mixin mgab5{margin:0 0 $fx5 0}
+@mixin mgar5{margin:0 0 0 $fx5}
+    @mixin mgat10{margin:$fx10 0 0 0}
+    @mixin mgar10{margin:0 $fx10 0 0}
+    @mixin mgab10{margin:0 0 $fx10 0}
+    @mixin mgar10{margin:0 0 0 $fx10}
+        @mixin mgat15{margin:$fx15 0 0 0}
+        @mixin mgar15{margin:0 $fx15 0 0}
+        @mixin mgab15{margin:0 0 $fx15 0}
+        @mixin mgar15{margin:0 0 0 $fx15}
+            @mixin mgat20{margin:$fx20 0 0 0}
+            @mixin mgar20{margin:0 $fx20 0 0}
+            @mixin mgab20{margin:0 0 $fx20 0}
+            @mixin mgar20{margin:0 0 0 $fx20}
+
+//MarginStyle
+@mixin mgt5{margin-top:$fx5}
+@mixin mgr5{margin-right:$fx5}
+@mixin mgb5{margin-bottom:$fx5}
+@mixin mgr5{margin-left:$fx5}
+    @mixin mgt10{margin-top:$fx10}
+    @mixin mgr10{margin-right:$fx10}
+    @mixin mgb10{margin-bottom:$fx10}
+    @mixin mgr10{margin-left:$fx10}
+        @mixin mgt15{margin-top:$fx15}
+        @mixin mgr15{margin-right:$fx15}
+        @mixin mgb15{margin-bottom:$fx15}
+        @mixin mgr15{margin-left:$fx15}
+            @mixin mgt20{margin-top:$fx20}
+            @mixin mgr20{margin-right:$fx20}
+            @mixin mgb20{margin-bottom:$fx20}
+            @mixin mgr20{margin-left:$fx20}
+
+@mixin gr_pp{background:linear-gradient(0deg,#9B40E2 0%,#6C40E2 100%)!important}
+@mixin gr_ppl{background:linear-gradient(45deg,#A640E2 0%,#6C40E2 100%)!important}
+
+@mixin txtunder{text-decoration:underline}
+
+//Display
+@mixin dis_b{display:block}
+@mixin dis_ib{display:inline-block}
+@mixin dis_n{display:none}
+@mixin dis_t{display:table}
+@mixin dis_tc{display:table-cell}
+
+//TextAlign
+@mixin txtac{text-align:$itmc!important}
+@mixin txtal{text-align:$itml!important}
+@mixin txtar{text-align:$itmr!important}
+
+//BoxSizing
+@mixin bsbb{box-sizing:border-box}
+
+//Position
+@mixin ps_a {position:absolute}
+@mixin ps_r {position:relative}
+@mixin ps_f {position:fixed}
+
+//ScrollBar
+@mixin scrollbarstyle {
+    *::-webkit-scrollbar{width:6px;height:6px;background-color:transparent;border-radius:100px;}
+    *::-webkit-scrollbar-track{background-color:#222329}
+    *::-webkit-scrollbar-thumb{background-color:#3c3e47}
+    *::-webkit-scrollbar-thumb:hover{background-color:rgb(97, 97, 97)}
+}
+
+//PlaceholderStyle
+@mixin place--holder {
+    input::placeholder,
+    textarea::placeholder{color:$clgya;font-weight:$fnf4}
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder{color:$clgya;font-weight:$fnf4}
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder{color:$clgya;font-weight:$fnf4}
+    input:-moz-input-placeholder,
+    textarea:-moz-input-placeholder{color:$clgya;font-weight:$fnf4}
+    input.password{letter-spacing:8px;font-size:30px}
+    input.password::placeholder{letter-spacing:0;}
+    input.password::-webkit-input-placeholder{letter-spacing:0;}
+    input.password:-ms-input-placeholder{letter-spacing:0;}
+    input.password:-moz-input-placeholder{letter-spacing:0;}
+}

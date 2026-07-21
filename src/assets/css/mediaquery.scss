@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*  PC 모니터 해상도(9/-2)
+    8K UHD          7680
+    DQHD(WUHD/UHD+) 5120
+    4K DCI          4096
+    4K UHD          3840
+    WQHD            3440
+    QHD/WQHD(WFHD)  2560
+    FHD+            2460
+    FHD             1920
+    HD              1280
+    qHD             960 (제외)
+    nHD             640 (제외)
+*/ 
+@media screen and (max-width:7680px){}
+@media screen and (max-width:5120px){}
+@media screen and (max-width:4096px){}
+@media screen and (max-width:3840px){}
+@media screen and (max-width:3440px){}
+@media screen and (max-width:2560px){}
+@media screen and (max-width:2460px){}
+@media screen and (max-width:1920px){}
+@media screen and (max-width:1800px){}
+@media screen and (max-width:1400px){}
+@media screen and (max-width:1280px){}
+/* @media screen and (max-width:960px){} */
+/* @media screen and (max-width:640px){} */
