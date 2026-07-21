@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: "/vuePage",
+  base: "/vue-page/",
   build: {
     outDir: './docs',
     emptyOutDir: true,
